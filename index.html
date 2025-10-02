@@ -6,16 +6,17 @@
   <title>聯仕氣體實業有限公司</title>
   <style>
     body {
+      font-family: Arial, "Microsoft JhengHei", sans-serif;
       margin: 0;
-      font-family: "Microsoft JhengHei", sans-serif;
-      line-height: 1.6;
-      background: #f9f9f9;
+      padding: 0;
+      background: #f4f4f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #1f3b5c;
+      background: linear-gradient(135deg, #004a99, #0073e6);
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
     header h1 {
@@ -25,95 +26,105 @@
     header p {
       margin-top: 0.5rem;
       font-size: 1.2rem;
-      opacity: 0.9;
     }
     nav {
-      background: #2c4c75;
-      text-align: center;
-      padding: 0.8rem;
-      position: sticky;
-      top: 0;
+      background: #005bac;
+      display: flex;
+      justify-content: center;
     }
     nav a {
       color: white;
+      padding: 1rem;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
     }
     nav a:hover {
-      text-decoration: underline;
+      background: #004080;
     }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+    .hero {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: white;
     }
-    h2 {
-      color: #1f3b5c;
+    .hero img {
+      max-width: 200px;
+      border-radius: 12px;
       margin-bottom: 1rem;
     }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+    h2 {
+      color: #005bac;
+      border-left: 6px solid #005bac;
+      padding-left: 10px;
+      margin-top: 2rem;
+    }
     ul {
-      list-style: square;
-      padding-left: 20px;
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      padding: 0.5rem 0;
     }
     footer {
-      background: #1f3b5c;
-      color: white;
       text-align: center;
-      padding: 1.5rem;
+      background: #333;
+      color: white;
+      padding: 1rem;
       margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <!-- 首頁 -->
   <header>
     <h1>聯仕氣體實業有限公司</h1>
-    <p>成立於1972年，專業氣體供應與技術服務</p>
+    <p>成立於 1972 年，專業氣體供應商</p>
   </header>
 
-  <!-- 導覽列 -->
   <nav>
-    <a href="#about">關於我們</a>
+    <a href="#about">公司簡介</a>
     <a href="#services">服務項目</a>
-    <a href="#contact">聯絡我們</a>
+    <a href="#contact">聯絡方式</a>
   </nav>
 
-  <!-- 關於我們 -->
-  <section id="about">
-    <h2>關於我們</h2>
-    <p>
-      聯仕氣體實業有限公司成立於1972年，專注於提供各式工業氣體與相關設備。
-      我們秉持「品質第一、客戶至上」的經營理念，服務範圍涵蓋傳統工業、半導體產業與特殊應用。
-      超過五十年的經驗，讓我們成為業界值得信賴的合作夥伴。
-    </p>
+  <section class="hero">
+    <img src="https://via.placeholder.com/200x200.png?text=公司Logo" alt="公司 Logo">
+    <h2>專注氣體產業 超過 50 年</h2>
+    <p>工業氣體、半導體氣體、特殊氣體、混合氣體專業供應商</p>
   </section>
 
-  <!-- 服務項目 -->
-  <section id="services">
-    <h2>服務項目</h2>
-    <ul>
-      <li>工業氣體</li>
-      <li>半導體氣體</li>
-      <li>特殊氣體</li>
-      <li>混合氣體</li>
-      <li>各式氣體五金配備</li>
-      <li>各式調壓閥（錶）</li>
-    </ul>
-  </section>
+  <div class="container">
+    <section id="about">
+      <h2>公司簡介</h2>
+      <p>聯仕氣體實業有限公司成立於 1972 年，專注於各式工業與特殊氣體的供應，並提供完整的氣體設備與配件，致力於為客戶提供最專業、安全且可靠的服務。</p>
+    </section>
 
-  <!-- 聯絡我們 -->
-  <section id="contact">
-    <h2>聯絡我們</h2>
-    <p>📍 地址：台灣（可補充詳細地址）</p>
-    <p>📞 電話：03-5553222</p>
-    <p>✉️ Email：info@lianshigas.com（可換成正式信箱）</p>
-  </section>
+    <section id="services">
+      <h2>服務項目</h2>
+      <ul>
+        <li>✔ 工業氣體</li>
+        <li>✔ 半導體氣體</li>
+        <li>✔ 特殊氣體</li>
+        <li>✔ 混合氣體</li>
+        <li>✔ 各式氣體五金配備</li>
+        <li>✔ 各式調壓閥（錶）</li>
+      </ul>
+    </section>
 
-  <!-- 頁尾 -->
+    <section id="contact">
+      <h2>聯絡方式</h2>
+      <p>📞 電話：03-5553222</p>
+      <p>🏢 地址：新竹地區（可放公司地址）</p>
+      <p>✉️ Email：example@ls-gas.com.tw</p>
+    </section>
+  </div>
+
   <footer>
-    <p>&copy; 2025 聯仕氣體實業有限公司. All rights reserved.</p>
+    <p>&copy; 1972 - 2025 聯仕氣體實業有限公司 | All Rights Reserved</p>
   </footer>
 </body>
 </html>
-
